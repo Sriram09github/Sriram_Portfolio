@@ -1,0 +1,503 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+
+a,.btn{
+    transition: all 300ms ease;
+}
+
+nav,.nav-links{
+    display: flex;
+}
+nav{
+    margin-top: 0;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    position:fixed;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: purple;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-color: purple;
+}
+.logo{
+    font-size: 1.5rem;
+
+}
+.logo:hover{
+    cursor: default;
+}
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position:relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width :30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3ms ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3ms ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3ms ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger.icon span:first-child{
+    transform: none;
+}
+
+.hamburger.icon span:nth-child(2){
+    opacity: 1;
+}
+
+.hamburger.icon span:last-child{
+    transform: none;
+}
+.pic{
+    display: flex;
+    border-radius: 200px;
+    border: black solid 1px;
+    width: 350px;
+    height: 350px;
+}
+
+section{
+    height: 80vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/* Home */
+.title{
+    color: purple;
+    font-size: 20px;
+}
+
+.Profile{
+    display: flex;
+    padding-top: 20vh;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 20vh;
+}
+
+.Details{
+    align-self: center;
+    text-align: center;
+}
+
+.Details p{
+    font-weight: 600;
+    color: black;
+}
+
+#greet{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+#name{
+    font-size: 2rem;
+    text-align: center;
+    color: purple;
+    padding: 10px;
+}
+
+.Social-Media{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.btn-container{
+    text-align: center;
+    gap: 2rem;
+}
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    border-color: purple;
+    cursor: pointer;
+}
+
+#ContactInfo{
+    background-color: purple;
+    color: white;
+    
+}
+
+.button:hover{
+    background-color: purple;
+    color: white;
+    border: black solid;
+}
+
+#ContactInfo:hover{
+    background-color:rgb(rgb(73, 28, 73));
+    color: black;
+    border: solid;
+}
+
+/* about */
+
+.About{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30vh;
+    margin-bottom: 30vh;
+}
+.about-pic{
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 1.5rem;
+}
+
+#about-icon{
+    font-size: 20px;
+}
+
+.about-container{
+    display: flex;
+}
+
+.about-content{
+    padding: 1rem;
+}
+
+.about-details{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.career-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: purple solid 1px;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.para-container{
+    display: block;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* Skills */
+
+.title-container{
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+
+.Skills{
+    margin-bottom: 15rem;
+    padding-top: 15vh;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    color: black;
+}
+
+.Details-container{
+    text-align: center;
+    flex: 1;
+    padding: 1.5rem;
+    border: black solid 1.5px;
+    border-radius: 1rem;
+}
+.skill-title{
+    padding-bottom: 1.5rem;
+}
+.skills-details{
+    display: flex;
+    gap: 1rem;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+/* Project */
+
+.project-pic{
+    height: 40vh;
+    width: 60vh;
+    border-radius: 20px;
+}
+
+.projects{
+    margin-bottom: 25vh;
+    padding-top: 7.5rem;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project-details{
+    display: flex;
+    justify-content: center;
+    border: black solid 1.5px;
+    border-radius: 12vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.project{
+    text-align: center;
+}
+
+.project h1{
+    padding: 10px;
+}
+
+.about-project{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.link-btn{
+    padding: 10px;
+    font-size: 10;
+    border: black solid 1px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.link-btn:hover{
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.contact{
+    padding-top: 15vh;
+    margin-bottom: 10vh;
+}
+
+#contact-icon{
+    font-size: 25px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-me{
+    padding: 15px;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: black solid 1px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input-box h1{
+    text-align: center;
+}
+
+.input-box input{
+    padding: 10px;
+    border: purple solid 1px;
+    border-radius: 10px;
+    font-size: 15px
+}
+
+.input-box textarea{
+    padding: 10px;
+    border: purple solid 1px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn{
+    text-align: center;
+    padding: 10px;
+}
+
+.submit{
+    padding: 10px;
+    font-size: 15px;
+    border: black solid 1px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.submit:hover{
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+}
+
+.contact-details{
+    display: flex;
+    border: black solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contact-info{
+    display: flex;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 20px;
+}
+
+footer{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-bottom{   
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
