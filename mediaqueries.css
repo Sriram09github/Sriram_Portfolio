@@ -1,146 +1,292 @@
-@media screen and (max-width : 1400px ){
-    .Profile{
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-content{
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1400px) {
+  .Profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-content {
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width : 1200px ){
-    
-    #desktop-nav{
-        display: none;
-    }
-    #hamburger-nav{
-        display: flex;
-    }
-    .Skills, .skills-container{
-        margin-top: 1rem;
-    }
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .Skills,
+  .skills-container {
+    margin-top: 1rem;
+  }
+  .Profile {
+    padding-top: 12vh;
+  }
+  .Profile,
+  .Details {
+    display: block;
+  }
+  #greet {
+    font-size: 20px;
+  }
+  #name {
+    font-size: 20px;
+  }
+  .Social-Media {
+    font-size: 20px;
+  }
+  .btn-container {
+    font-size: 10px;
+  }
+  section,
+  .Details,
+  .about-container,
+  .skills-container,
+  .contact-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrer-details {
+    padding: 0%;
+  }
+  .about-details {
+    padding: 0%;
+  }
+  .Skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: 2vh;
+  }
+  .skills-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .project-pic {
+    height: 18vh;
+    width: 36vh;
+    border-radius: 20px;
+  }
+  .project-details {
+    display: flex;
+    justify-content: center;
+    border: black solid 1.5px;
+    border-radius: 8vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vh;
+    padding-top: 5vh;
+  }
+  .pic {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-pic {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .About {
+    padding-top: 5vh;
+    margin-bottom: 0;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0vh;
+    padding-top: 5vh;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  .foot-bottom {
+    font-size: 10px;
+    padding: 0;
+  }
+  .arrow {
+    display: none;
+  }
+}
 
-    .Profile{
-        padding-top: 12vh;
-    }
+@media screen and (max-width: 768px) {
+  .Profile {
+    padding-top: 8vh;
+    height: auto;
+    margin-bottom: 3rem;
+  }
 
-    .Profile, .Details{
-        display: block;
-    }
+  #greet {
+    font-size: 18px;
+    text-align: center;
+  }
 
-    #greet{
-        font-size: 20px;
-    }
+  #name {
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+  }
 
-    #name{
-        font-size: 20px;
-    }
+  .text {
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .Social-Media{
-        font-size: 20px;
-    }
+  .Social-Media {
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
 
-    .btn-container{
-        font-size: 10px;
-    }
+  .btn-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
 
-    section, .Details, .about-container,.skills-container, .contact-container{
-        height: fit-content;
-    }
-    section{
-        margin: 0 5%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .about-container{
-        display: flex;
-        flex-direction: column;
-    }
+  .button {
+    width: 100%;
+    max-width: 200px;
+  }
 
-    .carrer-details{
-        padding: 0%;
-    }
+  .pic,
+  .about-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+  }
 
-    .about-details{
-        padding: 0%;
-    }
+  .title-container {
+    text-align: center;
+  }
 
-    .Skills{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 0;
-        margin-bottom: 2vh;
-    }
-    .skills-details{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+  .title-container h1 {
+    font-size: 24px;
+  }
 
-/* Projects */
+  .about-content {
+    padding: 0 1rem;
+  }
 
-    .project-pic{
-        height: 18vh;
-        width: 36vh;
-        border-radius: 20px;
-    }
+  .about-details {
+    gap: 1rem;
+  }
 
-    .project-details{
-        display: flex;
-        justify-content: center;
-        border: black solid 1.5px;
-        border-radius: 8vh;
-        padding-left: 5vh;
-        padding-right: 5vh;
-    }
+  .career-details {
+    padding: 1rem;
+  }
 
-    .projects{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1vh;
-        padding-top: 5vh;
-    }
+  .skills-details {
+    gap: 1rem;
+  }
 
-    .pic{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
+  .Details-container {
+    padding: 1rem;
+  }
 
-    .about-pic{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    .About{
-        padding-top: 5vh;
-        margin-bottom: 0;
-    }
+  .project {
+    padding: 1rem;
+  }
 
-/* Contact */
-    .contact{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 0vh;
-        padding-top: 5vh;
-    }
-    .contact-details{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 15px;
-    }
+  .project-pic {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
 
-    .foot-bottom{
-        font-size: 10px;
-        padding: 0;
-    }
+  .about-project {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .arrow{
-        display: none;
-    }
+  .link-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contact-content {
+    padding: 1rem;
+  }
+
+  .input-box {
+    padding: 1rem;
+  }
+
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .submit {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contact-info {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Profile {
+    padding-top: 6vh;
+  }
+
+  #greet {
+    font-size: 16px;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .pic,
+  .about-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title-container h1 {
+    font-size: 20px;
+  }
+
+  .career-details h3 {
+    font-size: 16px;
+  }
+
+  .article-container article {
+    padding: 0.5rem;
+  }
+
+  .project-pic {
+    max-width: 250px;
+  }
+
+  .input-box h1 {
+    font-size: 20px;
+  }
 }
